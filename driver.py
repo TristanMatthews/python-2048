@@ -6,6 +6,12 @@
 #   Simple game driver to auto play a game. Currently only written to support 2048,
 #   but should work other turn based games with a well defined legal move set.
 #
+#   Example:
+#       metrics_list = ['bias']
+#       metrics = game.Metrics2048(metrics_list)
+#       sim = driver.LearnGame(game.Game2048, metrics, eta=0.1, start_parameters=[0])
+#       sim.train(10000)
+#
 ################################################################
 
 import numpy as np
